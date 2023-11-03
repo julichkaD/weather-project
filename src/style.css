@@ -6,74 +6,84 @@ body {
 }
 
 .container {
+
     border: 1px solid black;
     border-radius: 10px;
     width: 80%;
-    height: 70vh;
+    height: 81vh;
     margin-top: 60px;
     background-color: #f8da5b;
    
 }
+
+
  /* first box */
 .city-date {
-    border: 1px solid green;
     border-radius: 8px;
-    margin: 30px 40px;
     height: 35vh;
     text-align: center;
     background-color: #f4f8e9;
     color: #247291;
 }
-span {
-    color: #466ade;
-    text-decoration: underline;
-}
-    
 
-.fa-solid {
-   margin: 10px 20px;
-    font-size: 60px ;
-}
 
 /* second box- same row */
  .city-search {
     border: 1px solid blue;
     border-radius: 8px;
-    margin-left: 80px;
-    margin-top: 30px;
     height: 35vh;
     background-color: #f4f8e9;
     color: #247291;
     
 }
-.precipitation,
+#icon {
+    width: 120px;
+    height: 130px;
+   
+}
 .humidity,
 .wind,
 .condition {
 text-align: center;
-margin-top: 10px;
+margin-top: 25px;
 font-size: 23px;
 }
 
-.form-control  {
-    width: 350px;
-    display: inline;
-    margin-right: 10px;
-    margin-left: 20px;
-    border-color: blue;
+#condition {
+    font-size: 30px;
+    font-weight: 900;
+    color: #466ade;
+
 }
+
+ .form-control  {
+ border-color: blue;
+} 
+
+
 /* days-forecast */
 .days-forecast {
 text-align: center;
-margin-top: 40px;
-grid-gap: 40px;
-margin-left: 10px;
-font-size: 23px;
-color: #247291;
-
+padding-top: 40px;
 }
+
 .card-body {
-  border: 1px solid purple; 
+  border: 1px solid blue; 
   border-radius: 5px; 
   background-color: #f4f8e9;
 }
+.author {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+}
+ footer {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+#city {
+    color: #466ade;
+   text-decoration: underline;
+   font-size: 32px;
+}
+
