@@ -22,13 +22,11 @@
     <div class="row gx-5 my-4">
       <div class="col">
         <div class="p-3 border border-primary city-date">
-          <h1 id="city"><span>Your City</span id></h1>
-          <h2><span id="temp-result"></span> <span id="celsius">
-              ℃
-            </span>/ <span id="fahrenheit">F</span></h2>
-          <h2 class="date-time">November, 17</h2>
-          <!-- <i class="fa-solid fa-cloud-sun-rain" id="icon"></i> -->
-          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" id="icon">
+          <div id="city">Your City</div>
+          <div id="temp-result">
+          </div>
+          <div id="date-time">November, 17</div>
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" id="icon" />
           <br />
         </div>
       </div>
@@ -38,14 +36,14 @@
           <form class="d-flex">
             <input class="form-control" id="input-form" type="text" placeholder="Enter Your City" autofocus="on"
               autocomplete="no" />
-            <button type="button" value="submit" class="btn btn-outline-primary btn-small ms-2">
+            <button type="submit" value="submit" class="btn btn-outline-primary btn-small ms-2">
               Search
             </button>
           </form>
-          <p class="condition"><span id="condition"></span></p>
-          <p class="humidity">humidity: <span id="humidity"></span>%</p>
-          <p class="wind">wind: <span id=wind></span> m/s</p>
-          <p class="condition"><span id="condition"></span></p>
+          <div class="condition" id="condition"></div>
+          <div class="humidity" id="humidity"></div>
+          <div class="wind" id="wind"></div>
+          <div class="condition" id="condition"></div>
         </div>
       </div>
     </div>
