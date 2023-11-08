@@ -51,8 +51,8 @@ body {
 .form-control {
   border-color: blue;
 }
-#temp-result,
-#date-time {
+#current-temp,
+#time {
   font-size: 24px;
 }
 
@@ -67,10 +67,7 @@ body {
   border-radius: 5px;
   background-color: #f4f8e9;
 }
-.author {
-  font-family: "Courier New", Courier, monospace;
-  font-size: smaller;
-}
+
 footer {
   font-size: 20px;
   text-align: center;
@@ -80,4 +77,29 @@ footer {
   color: #466ade;
   text-decoration: underline;
   font-size: 32px;
+}
+#forecast {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  color: #4111aa;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+
+
+}
+.weather-forecast-icon {
+  width: 70px;
+  height: 70px;
+}
+.card {
+    border: 1px solid #466ade;
+    border-radius: 10px;
+}
+ .author {
+  font-family: "Courier New", Courier, monospace;
+  font-size: smaller;
+  text-align: center;
 }
