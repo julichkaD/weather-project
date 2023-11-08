@@ -23,9 +23,9 @@
       <div class="col">
         <div class="p-3 border border-primary city-date">
           <div id="city">Your City</div>
-          <div id="temp-result">
+          <div id="current-temp">
           </div>
-          <div id="date-time">November, 17</div>
+          <div id="time"></div>
           <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" id="icon" />
           <br />
         </div>
@@ -43,57 +43,13 @@
           <div class="condition" id="condition"></div>
           <div class="humidity" id="humidity"></div>
           <div class="wind" id="wind"></div>
-          <div class="condition" id="condition"></div>
         </div>
       </div>
     </div>
 
-    <div class="row justify-content-evenly days-forecast">
-      <div class="col-4 col-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Monday</h5>
-            <p>🌧️</p>
-            <p>20℃ - 22℃</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Tuesday</h5>
-            <p>🌤️</p>
-            <p>24℃ - 26℃</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Wednesday</h5>
-            <p>🌧️</p>
-            <p>20℃ - 22℃</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Thursday</h5>
-            <p>☀️</p>
-            <p>27℃ - 29℃</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 col-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Friday</h5>
-            <p>☀️</p>
-            <p>28℃ - 30℃</p>
-          </div>
-        </div>
-      </div>
+    <div class="container-forecast" id="forecast">
+      <div class="row"></div>
+
     </div>
     <footer>
       <blockquote>
@@ -101,8 +57,14 @@
         exhilarating; there is really no such thing as bad weather, only
         different kinds of good weather." (John Ruskin)
       </blockquote>
-      <p class="author">Coded by Julichka 💙
-      </p>
+      <div class="author">
+        This project was coded by
+        <a href="https://github.com/julichkaD" target="_blank">Julichka</a>,
+        is
+        <a href="https://github.com/julichkaD/weather-project" target="_blank">open-sourced on GitHub</a>
+        and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </div>
     </footer>
   </div>
 
