@@ -15,17 +15,12 @@ day = weekdays[currentTime.getDay()];
 let hour = currentTime.getHours();
 let minutes = currentTime.getMinutes();
 
-let current = document.querySelector(".date-time");
-if (minutes < 10) {
-  current.innerHTML = `${day}  ${hour}:0${minutes}`;
-} else {
-  current.innerHTML = `${day}  ${hour}:${minutes}`;
-}
+let current = document.querySelector("#date-time");
+current.innerHTML = `${day}  ${hour}:${minutes}`;
 
 //search engine displays the city name on the page after the user submits the form.
-
 let form = document.querySelector("form");
-form.addEventListener("click", changeCity);
+form.addEventListener("submit", changeCity);
 
 function changeCity(event) {
   event.preventDefault();
@@ -50,17 +45,19 @@ function showCity(event) {
 function showResult(response) {
   document.querySelector("#city").innerHTML = response.data.city;
 
-  document.querySelector("#temp-result").innerHTML = Math.round(
+  document.querySelector("#temp-result").innerHTML = `${Math.round(
     response.data.temperature.current
-  );
+  )}°C`;
   document.querySelector("#condition").innerHTML =
     response.data.condition.description;
-  document.querySelector("#humidity").innerHTML =
-    response.data.temperature.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
+  document.querySelector(
+    "#humidity"
+  ).innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
+  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
-  );
+  )} m/s`;
   document.querySelector("#icon").src = response.data.condition.icon_url;
 }
 let citySearch = document.querySelector("form");
-citySearch.addEventListener("click", showCity);
+citySearch.addEventListener("submit", showCity);
+//forecast

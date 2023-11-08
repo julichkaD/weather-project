@@ -1,89 +1,83 @@
 body {
-    background-color: #247291;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Zilla Slab', serif;
-        
+  background-color: #247291;
+  font-family: "Lato", sans-serif;
+  font-family: "Zilla Slab", serif;
 }
 
 .container {
-
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 80%;
-    height: 81vh;
-    margin-top: 60px;
-    background-color: #f8da5b;
-   
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  height: 81vh;
+  margin-top: 60px;
+  background-color: #f8da5b;
 }
 
-
- /* first box */
+/* first box */
 .city-date {
-    border-radius: 8px;
-    height: 35vh;
-    text-align: center;
-    background-color: #f4f8e9;
-    color: #247291;
+  border-radius: 8px;
+  height: 35vh;
+  text-align: center;
+  background-color: #f4f8e9;
+  color: #247291;
 }
-
 
 /* second box- same row */
- .city-search {
-    border: 1px solid blue;
-    border-radius: 8px;
-    height: 35vh;
-    background-color: #f4f8e9;
-    color: #247291;
-    
+.city-search {
+  border: 1px solid blue;
+  border-radius: 8px;
+  height: 35vh;
+  background-color: #f4f8e9;
+  color: #247291;
 }
 #icon {
-    width: 120px;
-    height: 130px;
-   
+  width: 120px;
+  height: 130px;
 }
 .humidity,
 .wind,
 .condition {
-text-align: center;
-margin-top: 25px;
-font-size: 23px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 23px;
 }
 
 #condition {
-    font-size: 30px;
-    font-weight: 900;
-    color: #466ade;
-
+  font-size: 30px;
+  font-weight: 900;
+  color: #466ade;
 }
 
- .form-control  {
- border-color: blue;
-} 
-
+.form-control {
+  border-color: blue;
+}
+#temp-result,
+#date-time {
+  font-size: 24px;
+}
 
 /* days-forecast */
 .days-forecast {
-text-align: center;
-padding-top: 40px;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .card-body {
-  border: 1px solid blue; 
-  border-radius: 5px; 
+  border: 1px solid blue;
+  border-radius: 5px;
   background-color: #f4f8e9;
 }
 .author {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
+  font-family: "Courier New", Courier, monospace;
+  font-size: smaller;
 }
- footer {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 40px;
+footer {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
 #city {
-    color: #466ade;
-   text-decoration: underline;
-   font-size: 32px;
+  color: #466ade;
+  text-decoration: underline;
+  font-size: 32px;
 }
-
